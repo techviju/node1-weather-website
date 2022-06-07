@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<html>
+    <body>
+          <div class="site-content">
+            {{>header}}
+            <main class="main-content">
+				<div class="container">
+					<div class="breadcrumb">
+						<a href="/">Home</a>
+						<span>{{title}}</span>
+					</div>
+				</div>
+
+				<div class="fullwidth-block">
+					<div class="container">
+						
+						<div class="col-md-11 col-md-offset-1">
+							<h2 class="section-title">About us</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+							<form action="#" class="contact-form">
+								<div class="row">
+									<div class="col-md-6"><input type="text" placeholder="Your name..."></div>
+									<div class="col-md-6"><input type="text" placeholder="Email Addresss..."></div>
+								</div>
+								<div class="row">
+									<div class="col-md-6"><input type="text" placeholder="Company name..."></div>
+									<div class="col-md-6"><input type="text" placeholder="Website..."></div>
+								</div>
+								<textarea name="" placeholder="Message..."></textarea>
+								<div class="text-right">
+									<input type="submit" placeholder="Send message">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main> <!-- .main-content -->
+            <footer class="site-footer">
+				<div class="container">
+                    {{>footer}}
+                </div>
+            </footer>
+        </div>
+        {{!-- {{>header}}
+        <h1>{{title}}</h1>
+        <img src="img/me.jpg">
+        {{>footer}} --}}
+    </body>
+</html>
