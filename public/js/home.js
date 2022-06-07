@@ -1,11 +1,3 @@
-// console.log('javascript file is loaded!')
-// fetch('http://localhost:3000/weather?address=Kolkata').then((response)=>{
-//     response.json().then((data)=>{
-//         console.log(data)
-//     })
-
-
-
 const locationForm = document.querySelector('form');
 const inputSearch = document.querySelector('input');
 const locationMessage1 = document.querySelector('#divLocation-1')
