@@ -14,12 +14,11 @@ percipMessage.textContent = '0%';
 windSpeedMessage.textContent = '';
 windDirMessage.textContent = '';
 
-let baseURL = 'http://localhost:3000/'
 locationForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     document.querySelector('#divLoading').style.display = 'block'
     console.log(inputSearch.value)
-    const weatherUrl = baseURL+'weather?address='+ inputSearch.value +'';
+    const weatherUrl = '/weather?address='+ inputSearch.value +'';
     fetch(weatherUrl).then((response)=>{
         response.json().then((data)=>{
             document.querySelector('#divLoading').style.display = 'none'
